@@ -1,15 +1,46 @@
 {
-  "name": "Satellite App",
-  "description": "One-click deploy template for my-satellite",
-  "repository": "https://github.com/fileverse/satellite-heroku-template",
+  "name": "Satellite",
+  "description": "Fileverse Satellite Template",
+  "repository": "https://github.com/your-org/satellite-heroku-template",
+  "keywords": ["node", "express"],
+  "addons": [
+    {
+      "plan": "heroku-redis:mini"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "DB_PATH": {
+      "description": "SQLite database path (ephemeral on Heroku)",
+      "value": "/app/data/satellite.db"
+    },
+    "API_KEY": {
+      "description": "API key for storage server authentication",
+      "required": true
+    },
+    "PIMLICO_API_KEY": {
+      "description": "Pimlico API key for account abstraction (get from https://pimlico.io)",
+      "required": true
+    },
+    "RPC_URL": {
+      "description": "Ethereum RPC endpoint",
+      "value": "https://rpc.sepolia.org"
+    }
+  },
   "formation": {
     "web": {
-      "quantity": 1,
-      "size": "basic"
+      "quantity": 1
     },
     "worker": {
-      "quantity": 1,
-      "size": "basic"
+      "quantity": 1
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
