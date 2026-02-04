@@ -23,13 +23,14 @@
     "RPC_URL": {
       "description": "Ethereum RPC endpoint",
       "value": "https://rpc.sepolia.org"
+    },
+    "INLINE_WORKER": {
+      "description": "Run worker in the same process as the server",
+      "value": "true"
     }
   },
   "formation": {
     "web": {
-      "quantity": 1
-    },
-    "worker": {
       "quantity": 1
     }
   },

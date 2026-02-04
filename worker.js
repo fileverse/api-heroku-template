@@ -1,1 +1,0 @@
-import 'my-satellite/worker';

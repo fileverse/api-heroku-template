@@ -4,8 +4,7 @@
   "description": "Fileverse Satellite Template",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "worker": "node worker.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=18.0.0"
