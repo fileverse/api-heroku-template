@@ -3,11 +3,6 @@
   "description": "Fileverse Satellite Template",
   "repository": "https://github.com/your-org/satellite-heroku-template",
   "keywords": ["node", "express"],
-  "addons": [
-    {
-      "plan": "heroku-redis:mini"
-    }
-  ],
   "env": {
     "NODE_ENV": {
       "description": "Node environment",

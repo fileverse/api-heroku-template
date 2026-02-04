@@ -18,7 +18,6 @@ Before deploying, you'll need:
 | `API_KEY` | Yes | Storage server authentication key | - |
 | `PIMLICO_API_KEY` | Yes | Pimlico account abstraction API key | - |
 | `DB_PATH` | No | SQLite database path | `/app/data/satellite.db` |
-| `REDIS_URL` | Auto | Automatically set by Heroku Redis add-on | - |
 | `RPC_URL` | No | Ethereum RPC endpoint | `https://rpc.sepolia.org` |
 | `PORT` | Auto | Automatically set by Heroku | - |
 
@@ -27,7 +26,7 @@ Before deploying, you'll need:
 This template deploys two processes:
 
 - **Web Dyno**: Runs the API server for document management
-- **Worker Dyno**: Processes blockchain sync jobs via BullMQ
+- **Worker Dyno**: Processes blockchain sync jobs
 
 ## Important Limitations
 
