@@ -17,6 +17,6 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "my-satellite": "^0.0.7"
+    "my-satellite": "^0.0.8"
   }
 }
