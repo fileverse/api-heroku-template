@@ -1,1 +1,1 @@
-import "@fileverse/satellite/server";
+import "@fileverse/api/server";

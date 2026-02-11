@@ -1,7 +1,7 @@
 {
-  "name": "satellite-heroku-template",
+  "name": "api-heroku-template",
   "version": "1.0.0",
-  "description": "Fileverse Satellite Template",
+  "description": "Fileverse API Template",
   "type": "module",
   "scripts": {
     "start": "node server.js"
@@ -10,12 +10,12 @@
     "node": ">=23.0.0"
   },
   "keywords": [
-    "satellite",
+    "api",
     "heroku",
     "document-management"
   ],
   "license": "ISC",
   "dependencies": {
-    "@fileverse/satellite": "^0.0.16"
+    "@fileverse/api": "^0.0.16"
   }
 }

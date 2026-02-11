@@ -1,7 +1,7 @@
 {
-  "name": "Satellite",
-  "description": "Fileverse Satellite Template",
-  "repository": "https://github.com/your-org/satellite-heroku-template",
+  "name": "Fileverse API",
+  "description": "Fileverse API Template",
+  "repository": "https://github.com/fileverse/api-heroku-template",
   "keywords": ["node", "express"],
   "env": {
     "NODE_ENV": {
@@ -10,7 +10,7 @@
     },
     "DB_PATH": {
       "description": "SQLite database path (ephemeral on Heroku)",
-      "value": "/app/data/satellite.db"
+      "value": "/app/data/fileverse-api.db"
     },
     "API_KEY": {
       "description": "API key for storage server authentication",

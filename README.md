@@ -1,8 +1,8 @@
-# Satellite Heroku Template
+# API Heroku Template
 
-One-click deployment template for [Satellite](https://github.com/fileverse/satellite) - a document management system with sync.
+One-click deployment template for [Fileverse API](https://github.com/fileverse/api) - a document management system with sync.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/fileverse/satellite-heroku-template)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/fileverse/api-heroku-template)
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Before deploying, you'll need:
 | Variable        | Required | Description                       | Default                   |
 | --------------- | -------- | --------------------------------- | ------------------------- | --- |
 | `API_KEY`       | Yes      | Storage server authentication key | -                         |     |
-| `DB_PATH`       | No       | SQLite database path              | `/app/data/satellite.db`  |
+| `DB_PATH`       | No       | SQLite database path              | `/app/data/api.db`        |
 | `RPC_URL`       | No       | Ethereum RPC endpoint             | `https://rpc.sepolia.org` |
 | `INLINE_WORKER` | No       | Run worker in same process        | `true`                    |
 | `PORT`          | Auto     | Automatically set by Heroku       | -                         |
@@ -59,7 +59,7 @@ To run locally:
 
 ```bash
 npm install
-export DB_PATH="./data/satellite.db"
+export DB_PATH="./data/fileverse-api.db"
 export API_KEY="your-api-key"
 npm start
 ```
